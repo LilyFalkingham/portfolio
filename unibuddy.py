@@ -3,52 +3,57 @@
 
 # Define function to answer chosen question (6 input options)
 def user_question(question_no):
+    # If question 1 chosen:
     if question_no == '1':
+        # String answer (no variations)
         answer = ("You can find your timetable online by visiting "
                   "www.imaginaryuni.com/my_timetable and entering "
                   "your student ID.")
-        return answer
-    
+    # If question 2 chosen:
     elif question_no == '2':
+        # Dict. containing professors for each course
         tutor_dict = {'medicine': 'Professor Smith',
                       'law': 'Professor Wang',
                       'engineering': 'Professor Kim',
                       'fine art': 'Professor Devi',
                       'psychology': 'Professor Müller'
                       }
+        # String answer using user input with info from dict. 
         answer = (f"Your course tutor for {course.capitalize()} "
                   f"is {tutor_dict[course]}.")
-        return answer
-    
+    # If question 3 chosen:
     elif question_no == '3':
+        # String answer (no variations)
         answer = ("You can submit your work to be graded by visiting "
                   "www.imaginaryuni.com/submit_work and entering your "
                   "student ID.")
-        return answer
-    
+    # If question 4 chosen:
     elif question_no == '4':
+        # Create student email using user input name and surname
         student_email = f"{student_surname}{student_name}@imaginaryuni.com"
+        # String answer with email and ID
         answer = (f"Your email address is {student_email} and your temporary "
                   f"password is {student_id}.")
-        return answer
-    
+    # If question 5 chosen:
     elif question_no == '5':
+        # Dict. containing recommended clubs based on user input for course
         clubs_dict = {'medicine': 'Innovation in Medicine Society',
                       'law': 'Lawyers Without Borders Society',
                       'engineering': 'Design Engineering Society',
                       'fine art': 'Filmmaking and Photography Society',
                       'psychology': 'Human Rights Society'
                       }
+        # String answer using user input with info from dict.
         answer = (f"A full list of clubs is available at www.imaginaryuni.com"
                   f"/clubs. Many {course.capitalize()} students choose to join "
                   f"the {clubs_dict[course]}. Maybe give it a try!")
-        return answer
-    
+    # If question 6 chosen:
     elif question_no == '6':
+        # String answer (no variations)
         answer = ("If you have any further questions please email "
                   "support@imaginaryuni.com and you will receive a "
                   "response within 48hrs.")
-        return answer
+    return answer
 
 
 # Welcome message and request student info before answering q's
