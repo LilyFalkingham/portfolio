@@ -23,17 +23,17 @@ while True:
                                   "percentage (e.g. 8): "))/100
         years_investing = int(input("Please enter the number of years " 
                                     "you plan on investing (e.g. 20): "))
-        interest = input("Please enter the type of interest, 'simple' or " 
+        interest_type = input("Please enter the type of interest, 'simple' or " 
                          "'compound': ").lower() 
     
         # Depending on 'simple' or 'compound' entered:
         # Perform relevant calc. and display total return on investment
-        if interest == "simple":
+        if interest_type == "simple":
             simple_total = deposit * (1 + interest_rate * years_investing)
             print(f"\nYour total return on investment will be: "
                   f"£{round(simple_total, 2)}")
             break
-        elif interest == "compound":
+        elif interest_type == "compound":
             comp_total = deposit * math.pow((1+interest_rate), years_investing)
             print(f"\nYour total return on investment will be: " 
                   f"£{round(comp_total, 2)}")
