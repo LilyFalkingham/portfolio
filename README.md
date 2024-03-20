@@ -8,4 +8,4 @@ holiday_calc.py - A program to calculate the total cost of a holiday, incorporat
 
 unibuddy.py - A basic chatbot designed to assist students beginning their studies at Imaginary University.
 
-while_loop.py - A demonstration of a while loop that continuously sums up user-input numbers until a specific condition is met.
+while_loop.py - A demonstration of a while loop that continuously sums user-input numbers until a specific condition is met.
